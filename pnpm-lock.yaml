@@ -1,0 +1,49 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      '@openzeppelin/contracts':
+        specifier: ^5.2.0
+        version: 5.2.0
+    devDependencies:
+      '@noble/curves':
+        specifier: ^1.8.1
+        version: 1.8.1
+      forge-std:
+        specifier: github:foundry-rs/forge-std
+        version: https://codeload.github.com/foundry-rs/forge-std/tar.gz/8ba9031ffcbe25aa0d1224d3ca263a995026e477
+
+packages:
+
+  '@noble/curves@1.8.1':
+    resolution: {integrity: sha512-warwspo+UYUPep0Q+vtdVB4Ugn8GGQj8iyB3gnRWsztmUHTI3S1nhdiWNsPUGL0vud7JlRRk1XEu7Lq1KGTnMQ==}
+    engines: {node: ^14.21.3 || >=16}
+
+  '@noble/hashes@1.7.1':
+    resolution: {integrity: sha512-B8XBPsn4vT/KJAGqDzbwztd+6Yte3P4V7iafm24bxgDe/mlRuK6xmWPuCNrKt2vDafZ8MfJLlchDG/vYafQEjQ==}
+    engines: {node: ^14.21.3 || >=16}
+
+  '@openzeppelin/contracts@5.2.0':
+    resolution: {integrity: sha512-bxjNie5z89W1Ea0NZLZluFh8PrFNn9DH8DQlujEok2yjsOlraUPKID5p1Wk3qdNbf6XkQ1Os2RvfiHrrXLHWKA==}
+
+  forge-std@https://codeload.github.com/foundry-rs/forge-std/tar.gz/8ba9031ffcbe25aa0d1224d3ca263a995026e477:
+    resolution: {tarball: https://codeload.github.com/foundry-rs/forge-std/tar.gz/8ba9031ffcbe25aa0d1224d3ca263a995026e477}
+    version: 1.9.6
+
+snapshots:
+
+  '@noble/curves@1.8.1':
+    dependencies:
+      '@noble/hashes': 1.7.1
+
+  '@noble/hashes@1.7.1': {}
+
+  '@openzeppelin/contracts@5.2.0': {}
+
+  forge-std@https://codeload.github.com/foundry-rs/forge-std/tar.gz/8ba9031ffcbe25aa0d1224d3ca263a995026e477: {}
